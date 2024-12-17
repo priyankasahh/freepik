@@ -1,0 +1,467 @@
+  /* General Styles */
+      * {
+        margin: 0;
+        padding: 0;
+    
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: black;
+        color: white;
+      }
+
+      header .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+     /* Navigation Styling */
+nav {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  nav a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: rgb(68, 65, 65);
+  }
+
+
+/* Dropdown Item with Image */
+.with-image {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .with-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  
+  .with-image .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Dropdown container */
+  .nav-item {
+    position: relative;
+  }
+  
+  .dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    width: 600px;
+    padding: 20px;
+    z-index: 10;
+  }
+  
+  /* Dropdown Layout */
+  .dropdown-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+  }
+  /* Style for the "Edit" <p> tag */
+.hover-edit {
+    display: inline-block; /* Make it behave like an inline button */
+    padding: 10px 20px; /* Same padding as the button */
+    margin: 0; /* Remove default margins */
+    color: white; /* Default text color */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  /* Hover effect for the <p> tag */
+  .hover-edit:hover {
+    background-color: white; /* White background like the button */
+    color: black; /* Change text color */
+  }
+  
+  .dropdown-btn {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .dropdown-item strong {
+    font-size: 14px;
+    gap:10px;
+  }
+  
+  .dropdown-item p {
+    font-size: 12px;
+    color: #aaa;
+    margin: 5px 0;
+  }
+  
+  .new,
+  .beta {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-left: 4px;
+  }
+  
+  .beta {
+    background-color: #febd68;
+    color: black;
+  }
+  
+  /* Show dropdown on hover */
+  .nav-item:hover .dropdown {
+    display: flex;
+    justify-content: space-between;
+  }
+
+      .header-buttons button {
+        padding: 8px 15px;
+        background-color: #f4f4f4; /* Default background color */
+        color: black;
+        border: none;
+        margin-left: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+      }
+      
+      .header-buttons button:hover {
+        background-color: #007bff; /* Primary button color (e.g., Bootstrap blue) */
+        color: #fff; /* White text for contrast */
+      }
+      
+     
+
+      /* Hero Section */
+      /* Centered Hero Section */
+    .hero {
+    background: linear-gradient(to bottom, #000, #333333);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically center items */
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  /* Centered Search Bar */
+  .nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 620px; /* Restrict maximum width */
+    height: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    }
+    .search-select {
+    background-color: #f3f3f3;
+    width: 70px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    }
+    .search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 0 12px;
+    font-size: 14px;
+    }
+    .search-right {
+    display: flex;
+    align-items: center;
+    }
+    .icon-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0 8px;
+    cursor: pointer;
+    }
+    .search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0 12px;
+    cursor: pointer;
+    }
+    .search-select option {
+        display: flex;
+        align-items: center;
+        }
+        .search-select option i {
+        margin-right: 8px;
+        }
+
+  
+  /* Dropdown Header */
+  .dropdown-selected {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 5px;
+    border: none;
+    outline: none;
+    color: #333;
+  }
+  
+  .search-input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-icon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd68;
+    font-size: 1.2rem;
+    color: #0f1111;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .nav-search:hover {
+    border: 2px solid orange;
+  } 
+ 
+
+/* Right Icons and Buttons */
+.search-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .icon-btn, .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-btn:hover, .search-btn:hover {
+    border: 1px solid black; /* Black border on hover */
+    border-radius: 4px;
+  }
+  
+  .search-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+  
+
+      /* Scrollable Cards Section */
+      .cards-container {
+        position: relative;
+        padding: 20px 40px;
+        background: linear-gradient(to bottom, #333333, #000);
+      }
+
+      .scroll-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+        font-size: 18px;
+        border-radius: 50%;
+      }
+
+      .scroll-btn:hover {
+        background-color: black;
+      }
+
+      .scroll-left {
+        left: 10px;
+      }
+
+      .scroll-right {
+        right: 10px;
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-bottom: 10px;
+      }
+
+      .card {
+        min-width: 240px;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s;
+        gap:20px;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+      }
+
+      .card h3 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #666;
+        padding: 0 10px 15px;
+      }
+      .card h3, .card p {
+        padding: 12px;
+        margin: 0;
+        transition: color 0.3s ease;
+        }
+       .card h3:hover {
+        color: #007bff;
+       } 
+
+       /*get inspired*/
+
+       .inspired{
+        padding: 10px 10px;
+        text-align: center;
+        margin: 20px 20px;
+       }
+       
+       .image-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        }
+        .image-wrapper {
+        position: relative;
+        width: 33.33%;
+        height: 300px; /* Set a fixed height for the image wrappers */
+        }
+        .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio and fill the wrapper */
+        display: block;
+        }
+        .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+        .image-wrapper:hover .image-overlay {
+        opacity: 1;
+        }
+        .image-overlay h3 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 10px;
+        }
+        .image-overlay p {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20px;
+        }
+        .image-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 50%;
+        }
+
+
+    
